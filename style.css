@@ -1,0 +1,242 @@
+*{
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color:black;
+}
+.gif2{
+    display:none;
+}
+
+/* ----- Media Queries ----- */
+
+@media (max-width:700px) {
+    
+    .gif{
+
+        display:none;
+    }
+    #logo4{
+        display:none;
+    }
+    .gif2{
+        display: flex;   
+        background-color: black;
+    }
+    #logo5{
+        width:100%;
+        height: auto;
+    }
+    .slider{
+        margin-top:0vh;
+    }
+    
+    
+}
+@media (min-width:700px){
+    
+    .slide:hover { 
+        
+        animation-play-state:paused; 
+      }
+      .slide img:hover{
+        transform:scale(1.03);
+        
+      }
+}
+
+/* ----- ************ ----- */
+
+/* -------header----------- */
+    .gif{
+        background-color:black;
+        display:flex;
+        align-items: center;
+        padding-left: 35%;
+    
+    }
+    #logo4
+    {
+        width:50%;
+        background-color: black;
+        padding-left: 50px;
+        flex-shrink: 0;
+    }
+
+    
+
+
+    /* ----- ************ ----- */
+
+    /* ----- SLIDER ----- */
+
+    .slideshow{
+        display:flex;
+        overflow: hidden;
+        padding-top: 15px;
+    }
+    
+    .slide{
+        display: flex;
+        flex-direction: row;
+        
+        animation: scroll 50s linear infinite;
+        
+    }
+    @keyframes scroll{
+        0%{
+            transform: translate(0px);
+        }
+        100%{
+            transform: translateX(calc(-310px*13));
+        }
+    }
+    
+    
+    .slide img{
+        width:300px;
+        height:auto;
+        padding: 15px;
+        flex-shrink: 0;
+    }
+    
+    
+    
+
+    /* ----- ************ ----- */
+
+     /* ----- AIM ----- */
+     
+     
+     .obj{
+        position: relative;
+    }
+    
+    .obj .btn .text{
+        font-size: 3vh;
+        letter-spacing: 1.5px;
+        align-items: center;
+        color: white;
+        background-color:rgb(90, 90, 90); ;
+    }
+    .obj .btn{
+        font-family: 'Anek Telugu', sans-serif;
+    
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgb(90, 90, 90);
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .obj .btn:hover {
+        background-color: black;
+        
+    }
+    .obj .btn:hover .text{
+        background-color: black;
+        color: white;
+        
+    }
+    
+    .obj-img1{
+        width:100%;
+        height: auto;
+    }
+    
+  /* ------MERCHANDISE------ */
+  .buy{
+      
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    
+      
+  }
+  
+  .buyhead
+  {
+      
+
+      align-items: center;
+      font-size: x-large;
+      
+  }
+  .buyhead .h1{
+      justify-content: center;
+    
+  }
+.buyimage{
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+   
+    border-style: solid;
+    border-color: coral;
+    object-fit: contain;
+  }
+  .buyitem{
+    position: relative;
+    display:flex
+  }
+  .buyitem .btn2 .text{
+    font-size: x-large;
+    letter-spacing: 1.5px;
+    align-items: center;
+}
+.buyitem .btn2{
+    font-family: 'Anek Telugu', sans-serif;
+    font-size:larger;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(90, 90, 90);;
+    color:white;
+    opacity:93%;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buyitem .btn2 .text2{
+    color: WHITE;
+    background-color: rgb(90, 90, 90);;
+}
+
+.buyitem .btn2:hover {
+    
+    background-color: black;
+  }
+
+  .buyitem .btn2:hover .text2{
+    background-color: black;
+    color: WHITE;
+  }
+  
+
+
+  /* ------footer----- */
+  .footer{
+      color: aliceblue;
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    padding-top: 15px;
+   
+  }
+  .foot{
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+/* ----------------------- */
+
